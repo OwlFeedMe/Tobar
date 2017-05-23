@@ -17,8 +17,8 @@
         <servlet-class>fin</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>home</servlet-name>
-        <servlet-class>home</servlet-class>
+        <servlet-name>Controlador.index</servlet-name>
+        <servlet-class>Controlador.index</servlet-class>
     </servlet>
     
     
