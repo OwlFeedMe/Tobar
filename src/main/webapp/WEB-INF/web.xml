@@ -20,6 +20,14 @@
         <servlet-name>index</servlet-name>
         <servlet-class>Controlador.index</servlet-class>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>fin</servlet-name>
+        <url-pattern>fin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>index</url-pattern>
+    </servlet-mapping>
     
     
 </web-app>
