@@ -24,14 +24,14 @@
                 m[10] = "Noviembre";
                 m[11] = "Diciembre";
                 if (min < 10) {
-                    if (hrs == 22 && min < 31) {
+                    if (hrs == 22 && min < 36 && min > 29) {
                         document.write("Son las " + hrs + ":0" + min + " y te dire algo:");
                     } else {
                         document.write("Son las " + hrs + ":0" + min);
                         document.getElementById("myBtn").disabled = true;
                     }
                 } else {
-                    if (hrs == 22 && min < 31) {
+                    if (hrs == 22 && min < 36 && min > 29) {
                        document.write("Son las " + hrs + ":" + min + " y te dire algo:");
                     } else {
                          document.write("Son las " + hrs + ":" + min);
