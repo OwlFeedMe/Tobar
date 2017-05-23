@@ -36,7 +36,7 @@ public class MainGlassfish {
 	Deployer deployer = glassfish.getDeployer();
 
 	// Create a scattered web application.
-	ScatteredArchive archive = new ScatteredArchive("https://pollita.herokuapp.com/",
+	ScatteredArchive archive = new ScatteredArchive("pollita.herokuapp.com",
 	ScatteredArchive.Type.WAR, new File(webappDirLocation));
         // target/classes directory contains my complied servlets
 	archive.addClassPath(new File("target", "classes"));
