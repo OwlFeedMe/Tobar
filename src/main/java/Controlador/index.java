@@ -38,6 +38,9 @@ public class index extends HttpServlet  {
             if (boton.equals("espichame")) {
                 response.sendRedirect("fin.html");
             }
+            if (boton.equals("dias pasados")) {
+                response.sendRedirect("recordar.html");
+            }
            
         }
     }

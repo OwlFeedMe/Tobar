@@ -14,12 +14,20 @@
         <servlet-class>Controlador.fin</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>recordar</servlet-name>
+        <servlet-class>Controlador.fin</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>index</servlet-name>
         <servlet-class>Controlador.index</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>fin</servlet-name>
         <url-pattern>/fin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>recordar</servlet-name>
+        <url-pattern>/recordar</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>index</servlet-name>
