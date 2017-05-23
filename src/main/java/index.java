@@ -1,4 +1,4 @@
-package Controlador;
+
 
 /*
  * Carlos Steven Portilla Botero
@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author user
  */
-public class fin extends HttpServlet  {
+public class index extends HttpServlet  {
        protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -33,8 +33,8 @@ public class fin extends HttpServlet  {
             /* TODO output your page here. You may use following sample code. */
             String boton = request.getParameter("Boton");
             
-            if (boton.equals("fin :3")) {
-                response.sendRedirect("index.html");
+            if (boton.equals("espichame")) {
+                response.sendRedirect("fin.html");
             }
            
         }
