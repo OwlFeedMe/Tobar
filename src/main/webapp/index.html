@@ -1,56 +1,78 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-    <Script Language="JavaScript"> 
-function DameLaFechaHora() { 
-var hora = new Date() 
-var hrs = hora.getHours(); 
-var min = hora.getMinutes(); 
-var hoy = new Date(); 
-var m = new Array(); 
-var d = new Array() 
-var an= hoy.getYear(); 
-m[0]="Enero"; m[1]="Febrero"; m[2]="Marzo"; 
-m[3]="Abril"; m[4]="Mayo"; m[5]="Junio"; 
-m[6]="Julio"; m[7]="Agosto"; m[8]="Septiembre"; 
-m[9]="Octubre"; m[10]="Noviembre"; m[11]="Diciembre"; 
-if(min<10){if(hrs!=22 && min<31){document.write("Son las " +hrs+":0"+min);document.getElementById("myBtn").disabled = true;}else{document.write("Son las " +hrs+":0"+min+" y te dire algo:");} }else{if(hrs!=22 && min<31){document.write("Son las " +hrs+":"+min);document.getElementById("myBtn").disabled = true;}else{document.write("Son las " +hrs+":"+min+" y te dire algo:"); }}
+    <head>
+        <Script Language="JavaScript">
+            function DameLaFechaHora() {
+                var hora = new Date()
+                var hrs = hora.getHours();
+                var min = hora.getMinutes();
+                var hoy = new Date();
+                var m = new Array();
+                var d = new Array()
+                var an = hoy.getYear();
+                m[0] = "Enero";
+                m[1] = "Febrero";
+                m[2] = "Marzo";
+                m[3] = "Abril";
+                m[4] = "Mayo";
+                m[5] = "Junio";
+                m[6] = "Julio";
+                m[7] = "Agosto";
+                m[8] = "Septiembre";
+                m[9] = "Octubre";
+                m[10] = "Noviembre";
+                m[11] = "Diciembre";
+                if (min < 10) {
+                    if (hrs == 22 && min < 31) {
+                        document.write("Son las " + hrs + ":0" + min + " y te dire algo:");
+                    } else {
+                        document.write("Son las " + hrs + ":0" + min);
+                        document.getElementById("myBtn").disabled = true;
+                    }
+                } else {
+                    if (hrs == 22 && min < 31) {
+                       document.write("Son las " + hrs + ":" + min + " y te dire algo:");
+                    } else {
+                         document.write("Son las " + hrs + ":" + min);
+                        document.getElementById("myBtn").disabled = true;
+                    }
+                }
 
 
-} 
-</Script> 
-  <meta content="text/html; charset=ISO-8859-1"
- http-equiv="content-type">
-  <title></title>
-</head>
-<body>
-<form style="width: 75%;margin:auto;" action="index" name="index" method="post">
-  <table style="text-align: left; width: 100%;" border="0"
- cellpadding="2" cellspacing="2">
-   
-       <tr align="center">
-      
+            }
+        </Script> 
+        <meta content="text/html; charset=ISO-8859-1"
+              http-equiv="content-type">
+        <title></title>
+    </head>
+    <body>
+        <form style="width: 75%;margin:auto;" action="index" name="index" method="post">
+            <table style="text-align: left; width: 100%;" border="0"
+                   cellpadding="2" cellspacing="2">
 
-    </tr>
-    <tr align="center">
-      <td><input id="myBtn" name="Boton" value="espichame"
- type="submit"></td>
-    </tr>
-    <tr align="center">
-      <td><input name="Boton" value="dias pasados"
- type="submit"></td>
-    </tr>
-     
-          
-          <h1 align="center">
-              <script> 
-DameLaFechaHora(); 
-</script> </h1>
-    </tbody>
-  </table>
-  <br>
-</form>
-</body>
+                <tr align="center">
+
+
+                </tr>
+                <tr align="center">
+                    <td><input id="myBtn" name="Boton" value="espichame"
+                               type="submit"></td>
+                </tr>
+                <tr align="center">
+                    <td><input name="Boton" value="dias pasados"
+                               type="submit"></td>
+                </tr>
+
+
+                <h1 align="center">
+                    <script>
+                        DameLaFechaHora();
+                    </script> </h1>
+                </tbody>
+            </table>
+            <br>
+        </form>
+    </body>
 </html>
 
