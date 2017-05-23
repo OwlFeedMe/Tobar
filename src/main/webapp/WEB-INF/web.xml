@@ -13,38 +13,13 @@
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
     <servlet>
-        <servlet-name>Hello</servlet-name>
-        <servlet-class>com.crunchify.jsp.servlet.HelloCrunchify</servlet-class>
+        <servlet-name>fin</servlet-name>
+        <servlet-class>fin</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Home</servlet-name>
-        <servlet-class>Controlador.Home</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Hotel</servlet-name>
-        <servlet-class>Controlador.Hotel</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Alquiler</servlet-name>
-        <servlet-class>Controlador.Alquiler</servlet-class>
+        <servlet-name>index</servlet-name>
+        <servlet-class>index</servlet-class>
     </servlet>
     
-    <servlet-mapping>
-        <servlet-name>Hello</servlet-name>
-        <url-pattern>/CrunchifyServlet</url-pattern>
-    </servlet-mapping>
-    
-    <servlet-mapping>
-        <servlet-name>Home</servlet-name>
-        <url-pattern>/Home</url-pattern>
-    </servlet-mapping>
-   <servlet-mapping>
-        <servlet-name>Hotel</servlet-name>
-        <url-pattern>/Hotel</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Alquiler</servlet-name>
-        <url-pattern>/Alquiler</url-pattern>
-    </servlet-mapping>
     
 </web-app>

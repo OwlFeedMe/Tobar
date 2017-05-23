@@ -30,44 +30,13 @@ public class MainGlassfish {
 		glassfish.start();
 		
 	    CommandRunner runner = glassfish.getCommandRunner();
-//	    
-//        String dbUrl = System.getenv("DATABASE_URL");
-//        
-//        System.out.println("-------db url: " + dbUrl);
-//        Matcher matcher = Pattern.compile("postgres://(.*):(.*)@(.*)/(.*)").matcher(dbUrl);
-//        matcher.find();
-//        
-//        String host = matcher.group(3);
-//        String database = matcher.group(4);
-//        String user = matcher.group(1);
-//        String password = matcher.group(2);
-//        
-//        String properties = "user=" + user + ":password=" + password + ":databasename=" + database + ":loglevel=4:servername=" + host;
-//        
-//	    
-//        System.out.println("-------properties: " + properties);
-//        
-//        CommandResult result = runner.run("create-jdbc-connection-pool", "--datasourceclassname", "org.postgresql.ds.PGSimpleDataSource", "--restype", "javax.sql.DataSource", 
-//        		//"--property", "url='" + dbUrl + "'", 
-//        		//"--property", "user=user:password=postgres:databasename=petclinic:server=localhost:port=5432",
-//        		//"--steadypoolsize", "1",
-//        		//"--maxpoolsize", "1",
-//        		"--property", properties,
-//        		"app/jdbc/petcatalog_pool");
-//        
-//        System.out.println("------output of create conn pool: " + result.getOutput());
-//        
-//	    result = runner.run("create-jdbc-resource", "--connectionpoolid", "app/jdbc/petcatalog_pool", 
-//	    		"app/jdbc/petcatalog");
-//	    
-//        System.out.println("------output of create jdbc: " + result.getOutput());
-//
+//	
         CommandResult result  = runner.run("set-log-level", "javax.enterprise.system.container.web=INFO:javax.enterprise.system.container.ejb=FINEST");
         System.out.println("------output of set log level: " + result.getOutput());
 	Deployer deployer = glassfish.getDeployer();
 
 	// Create a scattered web application.
-	ScatteredArchive archive = new ScatteredArchive("",
+	ScatteredArchive archive = new ScatteredArchive("2505",
 	ScatteredArchive.Type.WAR, new File(webappDirLocation));
         // target/classes directory contains my complied servlets
 	archive.addClassPath(new File("target", "classes"));
