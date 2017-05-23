@@ -15,7 +15,7 @@ m[0]="Enero"; m[1]="Febrero"; m[2]="Marzo";
 m[3]="Abril"; m[4]="Mayo"; m[5]="Junio"; 
 m[6]="Julio"; m[7]="Agosto"; m[8]="Septiembre"; 
 m[9]="Octubre"; m[10]="Noviembre"; m[11]="Diciembre"; 
-if(min<10){document.write("las " +hrs+":0"+min); }else{document.write("las " +hrs+":"+min); }
+if(min<10){if(hrs!=22){document.write("Son las " +hrs+":0"+min);}else{document.write("Son las " +hrs+":0"+min+" y te dire algo:");} }else{if(hrs!=22){document.write("Son las " +hrs+":"+min);}else{document.write("Son las " +hrs+":"+min+" y te dire algo:");}}
 
 
 } 
@@ -31,15 +31,12 @@ if(min<10){document.write("las " +hrs+":0"+min); }else{document.write("las " +hr
     <tbody>
        <tr align="center">
       <td>
-          if(hrs!=22<h1>Son 
-              <script> 
-DameLaFechaHora(); 
-</script> </h1>else{<h1>Son 
+          
+          <h1>Son 
               <script> 
 DameLaFechaHora(); 
 </script>  y te dire
-              algo:</h1>}
-          </td>
+              algo:</h1></td>
     </tr>
     <tr align="center">
       <td><input name="Boton" value="espichame"
