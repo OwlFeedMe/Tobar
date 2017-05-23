@@ -38,6 +38,9 @@ public class fin extends HttpServlet  {
             if (boton.equals("fin :3")) {
                 response.sendRedirect("index.html");
             }
+            if (boton.equals("volver")) {
+                response.sendRedirect("index.html");
+            }
            
         }
     }
