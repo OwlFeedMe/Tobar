@@ -1,3 +1,5 @@
+package Controlador;
+
 /*
  * Carlos Steven Portilla Botero
  * 1015473300
@@ -32,7 +34,7 @@ public class index extends HttpServlet  {
             String boton = request.getParameter("Boton");
             
             if (boton.equals("espichame")) {
-                response.sendRedirect("1030.html");
+                response.sendRedirect("fin.html");
             }
            
         }

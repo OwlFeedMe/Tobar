@@ -14,11 +14,11 @@
     </welcome-file-list>
     <servlet>
         <servlet-name>fin</servlet-name>
-        <servlet-class>fin</servlet-class>
+        <servlet-class>Controlador.fin</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>index</servlet-name>
-        <servlet-class>index</servlet-class>
+        <servlet-class>Controlador.index</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>index</servlet-name>
