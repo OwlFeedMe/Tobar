@@ -3,8 +3,8 @@
  
     
     <servlet>
-        <servlet-name>index</servlet-name>
-        <servlet-class>index</servlet-class>
+        <servlet-name>home</servlet-name>
+        <servlet-class>home</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>fin</servlet-name>
