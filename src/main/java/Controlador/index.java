@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author user
  */
-public class home extends HttpServlet  {
+public class index extends HttpServlet  {
        protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
