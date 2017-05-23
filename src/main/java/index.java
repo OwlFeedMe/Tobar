@@ -31,7 +31,7 @@ public class index extends HttpServlet  {
             /* TODO output your page here. You may use following sample code. */
             String boton = request.getParameter("Boton");
             
-            if (boton.equals("abreme")) {
+            if (boton.equals("espichame")) {
                 response.sendRedirect("1030.html");
             }
            

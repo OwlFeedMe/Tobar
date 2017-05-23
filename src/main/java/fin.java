@@ -31,7 +31,7 @@ public class fin extends HttpServlet  {
             /* TODO output your page here. You may use following sample code. */
             String boton = request.getParameter("Boton");
             
-            if (boton.equals("fin")) {
+            if (boton.equals("fin :3")) {
                 response.sendRedirect("index.html");
             }
            
