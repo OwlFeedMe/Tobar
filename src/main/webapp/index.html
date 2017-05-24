@@ -15,17 +15,21 @@
         if (minuto < 10) {
                     if (hora == 22 && minuto < 39 && minuto > 29) {
                         document.index.reloj.value = "Son las " +horaImprimible+ " y te dire algo";
+                        document.getElementById("myBtn").value= "espichame";
                         document.getElementById("myBtn").disabled = false;
                     } else {
                         document.index.reloj.value = "Son las " +horaImprimible;
+                        document.getElementById("myBtn").value= "Aun no";
                         document.getElementById("myBtn").disabled = true;
                     }
                 } else {
                     if (hora == 22 && minuto < 39 && minuto > 29) {
                        document.index.reloj.value = "Son las " +horaImprimible + " y te dire algo:";
+                       document.getElementById("myBtn").value= "espichame";
                        document.getElementById("myBtn").disabled = false;
                     } else {
                         document.index.reloj.value = "Son las " + horaImprimible;
+                        document.getElementById("myBtn").value= "Aun no";
                         document.getElementById("myBtn").disabled = true;
                     }
                 }
