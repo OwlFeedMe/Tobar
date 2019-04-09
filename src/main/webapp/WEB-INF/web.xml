@@ -23,7 +23,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>fin</servlet-name>
-        <url-pattern>/fin</url-pattern>
+        <url-pattern>/Ing</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>recordar</servlet-name>
