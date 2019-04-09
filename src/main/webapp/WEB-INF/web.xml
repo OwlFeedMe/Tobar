@@ -10,7 +10,7 @@
       
     </welcome-file-list>
     <servlet>
-        <servlet-name>Ing</servlet-name>
+        <servlet-name>ing</servlet-name>
         <servlet-class>Controlador.fin</servlet-class>
     </servlet>
     <servlet>
@@ -22,8 +22,8 @@
         <servlet-class>Controlador.index</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Ing</servlet-name>
-        <url-pattern>/Ing</url-pattern>
+        <servlet-name>ing</servlet-name>
+        <url-pattern>/ing</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>recordar</servlet-name>
