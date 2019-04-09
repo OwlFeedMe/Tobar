@@ -35,10 +35,10 @@ public class fin extends HttpServlet  {
             /* TODO output your page here. You may use following sample code. */
             String boton = request.getParameter("Boton");
             
-            if (boton.equals("fin :3")) {
+            if (boton.equals("Atras")) {
                 response.sendRedirect("index.html");
             }
-            if (boton.equals("volver")) {
+            if (boton.equals("Ok")) {
                 response.sendRedirect("index.html");
             }
            

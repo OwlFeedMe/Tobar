@@ -10,7 +10,7 @@
       
     </welcome-file-list>
     <servlet>
-        <servlet-name>fin</servlet-name>
+        <servlet-name>Ing</servlet-name>
         <servlet-class>Controlador.fin</servlet-class>
     </servlet>
     <servlet>

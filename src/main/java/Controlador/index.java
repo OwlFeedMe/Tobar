@@ -35,11 +35,11 @@ public class index extends HttpServlet  {
             /* TODO output your page here. You may use following sample code. */
             String boton = request.getParameter("Boton");
             
-            if (boton.equals("espichame")) {
-                response.sendRedirect("fin.html");
+            if (boton.equals("Adm")) {
+                response.sendRedirect("Adm.html");
             }
-            if (boton.equals("dias pasados")) {
-                response.sendRedirect("recordar.html");
+            if (boton.equals("Ing")) {
+                response.sendRedirect("Ing.html");
             }
            
         }
