@@ -22,7 +22,7 @@
         <servlet-class>Controlador.index</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>fin</servlet-name>
+        <servlet-name>Ing</servlet-name>
         <url-pattern>/Ing</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
